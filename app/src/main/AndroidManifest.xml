@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.matrusnehhealth">
+
+    <!-- Permissions -->
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="MatruSnehHealth"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MatruSnehHealth">
+
+        <!-- Receiver -->
+
+        <receiver
+            android:name=".MedicineReceiver"
+            android:exported="false"/>
+
+        <!-- Activities -->
+
+        <activity android:name=".StatisticsActivity"/>
+
+        <activity android:name=".DangerSignsActivity"/>
+
+        <activity android:name=".GrowthActivity"/>
+
+        <activity android:name=".MedicineActivity"/>
+
+        <activity android:name=".AppointmentActivity"/>
+
+        <activity android:name=".EmergencyActivity"/>
+
+        <activity android:name=".NutritionActivity"/>
+
+        <activity android:name=".HistoryActivity"/>
+
+        <activity android:name=".KickCounterActivity"/>
+
+        <activity android:name=".BMIActivity"/>
+
+        <activity android:name=".StatisticsActivity"/>
+
+        <!-- Main Activity -->
+
+        <activity
+            android:name=".MainActivity"/>
+
+        <!-- Splash Activity -->
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN"/>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
